@@ -15,7 +15,7 @@ $EndDate = $StartDate.AddYears(1)
 
 $AzureApplicationObject = New-AzureADApplication -DisplayName $ApplicationName -AvailableToOtherTenants $false 
 
-# Generate Client Secret for App Registration and 
+# Generate Client Secret for App Registration and set expiry date for secret
 $AzureApplicationSecret = New-AzureADApplicationPasswordCredential -ObjectId $AzureApplicationObject.ObjectID -EndDate $EndDate
 
 # Convert plain text password to a secure string
