@@ -2,7 +2,7 @@
 # Application Administrator role Azure AD built-in role required
 # Requires access to Key Vault
 
-# Provide TenantId  
+# Provide TenantId
 $TenantId = 'aaaa-aaaa-aaaa-aaaa'
 
 # Connect to Azure Active Directory 
